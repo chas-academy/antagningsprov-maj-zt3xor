@@ -7,10 +7,25 @@ function uppg10(){
     // smallOdd ska innehålla tal mindre än 10 och udda
     // other ska innehålla alla andra tal
     // returnera ett objekt med de tre arrayerna
+    const bigEven = []
+    const smallOdd = []
+    const other = []
 
-  
+    for (siffra of numbers) {
+      if (siffra % 2 == 0 && siffra > 10) {
+        bigEven.push(siffra)
+      } else if (siffra % 2 !== 0 && siffra < 10) {
+        smallOdd.push(siffra)
+      } else {
+        other.push(siffra)
+      }
+    }
     
-  
+  console.log(smallOdd)
+
+
+
+
   }
   
   module.exports = { uppg10 };
